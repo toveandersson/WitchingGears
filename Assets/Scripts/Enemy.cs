@@ -11,6 +11,7 @@ public class Enemy : MonoBehaviour
     public GameObject gumma;
     public GameObject bullet;
     private Vector2 spawnPos;
+    public int spawnDistance = 3;
     public static GameObject enemy01;
     public static GameObject enemy02;
     public static GameObject enemy03;
@@ -29,7 +30,8 @@ public class Enemy : MonoBehaviour
         spawnPos.Normalize();
         //choose a random enemy from the enemies list to spawn
         int enemyNum = UnityEngine.Random.Range(0, enemies.Length);
-        GameObject.Instantiate(enemies[enemyNum], spawnPos.normalized * 10, Quaternion.identity, transform);
+        GameObject.Instantiate(enemies[enemyNum], spawnPos.normalized *spawnDistance, Quaternion.identity, transform);
+        spawnDistance = 10;
         timer = 7;
     }
 

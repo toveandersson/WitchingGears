@@ -4,12 +4,8 @@ MonoImporter:
   externalObjects: {}
   serializedVersion: 2
   defaultReferences:
-<<<<<<< Updated upstream
-  - shootPoint: {fileID: 1143356976720146667, guid: b9cc76eeba214b940ada6299ce75bd20, type: 3}
-=======
   - shootPoint: {instanceID: 0}
->>>>>>> Stashed changes
-  - shootingPrefab: {fileID: 4561054990901513028, guid: 2e7a1e72f6fe8104e91fa151aff12499, type: 3}
+  - shootingPrefab: {fileID: 1620303445897884430, guid: 10f20d14558ed9f4681b0140b7930bd1, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class powerUp : MonoBehaviour
 {
+    public int powerUpPoints = 0;
     public GameObject powerupArea;
     void Start()
     {
@@ -18,5 +19,6 @@ public class powerUp : MonoBehaviour
     {
         soundEffects.Instance.PowerUp();
         Debug.Log("trigger!");
+        powerUpPoints++;
     }
 }
