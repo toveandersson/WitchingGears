@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: df7859c599e99c74aa91fe50691929fa
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - gumma: {fileID: 2987713034171269238, guid: e72ec1c804e95b448bb5bbdafced0f13, type: 3}
+  - bullet: {fileID: 1620303445897884430, guid: 10f20d14558ed9f4681b0140b7930bd1, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: f294fdbd7e47f274ab6791539b75ea1e
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - frog: {fileID: 9007388246117716743, guid: 22084d1855a2f9e4c88b646dbe026afc, type: 3}
+  - frogExplo: {fileID: 60902902435639236, guid: 5d92d0aaa51f4f24bbe778a031020753, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
