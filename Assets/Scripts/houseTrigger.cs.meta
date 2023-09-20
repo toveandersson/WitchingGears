@@ -1,10 +1,9 @@
 fileFormatVersion: 2
-guid: 2417f03794c3f3f439fb949736c364e3
+guid: 75f4273e77ddd7b489a7cb26bc7199ee
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences:
-  - groda: {fileID: 737231251677861440, guid: 31ed724c7022ea34da46c920a0ec0b0a, type: 3}
+  defaultReferences: []
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

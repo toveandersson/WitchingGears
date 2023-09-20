@@ -5,6 +5,7 @@ MonoImporter:
   serializedVersion: 2
   defaultReferences:
   - explosion: {fileID: 5785921390367589139, guid: 2885a4fd020e29a4c91da76b504f9b0e, type: 3}
+  - groda: {fileID: 737231251677861440, guid: 31ed724c7022ea34da46c920a0ec0b0a, type: 3}
   - enemy1: {fileID: 4053848849395179717, guid: 7d01daeb16bc86945b9d9d2cb5a94976, type: 3}
   - enemy2: {fileID: 3765578331839849400, guid: db1c2c250a520bf44927e075fb4e0ce9, type: 3}
   - enemy3: {fileID: 7054122763641497069, guid: b413f76b7d6b3ef47aeb700a4acbc4d9, type: 3}

@@ -14,9 +14,6 @@ public class LivesScript : MonoBehaviour
     public GameObject[] enemies;
     public Sprite[] healthChunks = new Sprite[10];
 
-
-
-
     private void OnCollisionEnter2D(Collision2D other)
     {
         //Enemy enemies = other.gameObject.GetComponent<Enemy>();

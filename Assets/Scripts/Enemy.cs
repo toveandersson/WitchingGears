@@ -33,7 +33,6 @@ public class Enemy : MonoBehaviour
         timer = 7;
     }
 
-
     void Update()
     {
         //spawna enemy

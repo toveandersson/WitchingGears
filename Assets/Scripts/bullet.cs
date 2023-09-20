@@ -2,10 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
 using UnityEngine;
+using System;
 
 public class bullet : MonoBehaviour
 {
     public GameObject explosion;
+    public GameObject groda;
     public GameObject enemy1;
     public GameObject enemy2;
     public GameObject enemy3;
@@ -36,6 +38,8 @@ public class bullet : MonoBehaviour
         GameObject newExplosion = Instantiate(explosion, transform.position, transform.rotation);
         cameraMovement.Instance.ShakeCamera(5f, 0.1f);
         soundEffects.Instance.Kaboom();
+        Quaternion noRotation = Quaternion.identity;
+        GameObject newGroda = Instantiate(groda, transform.position, noRotation);
 
         //Destroy the newly created explosion object after 1 second.
         Destroy(newExplosion, 1);

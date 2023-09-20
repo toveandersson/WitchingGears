@@ -4,14 +4,11 @@ using UnityEngine;
 
 public class Frog : MonoBehaviour
 {
-    public GameObject groda;
-    private void OnCollisionEnter2D(Collision2D other)
+    public GameObject frog;
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (other != null)
-        {
             soundEffects.Instance.FrogSound();
-            Destroy(other.gameObject);
-        }
+            Destroy(gameObject);
 
     }
 }

@@ -3,7 +3,11 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - bullet
+  - frog
+  - hBar1
+  - target
   layers:
   - Default
   - TransparentFX
@@ -14,17 +18,17 @@ TagManager:
   - 
   - 
   - 
+  - Hus
+  - Grejor
+  - 
+  - Enemy
+  - 
+  - 
+  - Gumma
   - 
   - 
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Bullet
   - 
   - 
   - 
