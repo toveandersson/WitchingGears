@@ -34,10 +34,17 @@ public class bigExplotion : MonoBehaviour
             PowerChordUlt.SetActive(true);
             Invoke("colliderActive", 1.2f);
             Invoke("falsk", 1.8f);
+            Invoke("ultCameraShake", 1.1f);
             soundEffects.Instance.Ultimate();
             score.Instance.falsk();
 
         }
+    }
+
+    private void ultCameraShake()
+    {
+
+        cameraMovement.Instance.ShakeCamera(2f, 0.4f);
     }
 
     private void colliderActive()
