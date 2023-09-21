@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Resources;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -35,6 +36,7 @@ public class score : MonoBehaviour
         if (pickedUpFrogs == 5 || pickedUpFrogs == 10 || pickedUpFrogs == 15 || pickedUpFrogs == 20 || pickedUpFrogs == 25 || pickedUpFrogs == 30 || pickedUpFrogs == 35 || pickedUpFrogs == 40 || pickedUpFrogs == 45)
         {
             mTwoAppear();
+            bigExplotion.Instance.Ult();
         }
         if (pickedUpFrogs == 50)
         {
@@ -46,12 +48,12 @@ public class score : MonoBehaviour
     public void mTwoAppear()
     {
         MTwo.SetActive(true);
+
     }
 
     public void falsk()
     {
         MTwo.SetActive(false);
-
     }
 
     void youWin()

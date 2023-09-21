@@ -20,9 +20,8 @@ public class bigExplotion : MonoBehaviour
     public void Points()
     {
         bewitchedChildren++;
-        if (bewitchedChildren == 5)
+        if (bewitchedChildren == 5 || bewitchedChildren == 10 || bewitchedChildren == 15 || bewitchedChildren == 20 || bewitchedChildren == 25 || bewitchedChildren == 30 || bewitchedChildren == 35 || bewitchedChildren == 40 || bewitchedChildren == 45)
         {
-            Ult();
             bewitchedChildren = 0;
         }
     }
@@ -37,6 +36,7 @@ public class bigExplotion : MonoBehaviour
             Invoke("falsk", 1.8f);
             soundEffects.Instance.Ultimate();
             score.Instance.falsk();
+
         }
     }
 
