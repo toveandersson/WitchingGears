@@ -10,7 +10,7 @@ MonoImporter:
   - enemy2: {fileID: 3765578331839849400, guid: db1c2c250a520bf44927e075fb4e0ce9, type: 3}
   - enemy3: {fileID: 7054122763641497069, guid: b413f76b7d6b3ef47aeb700a4acbc4d9, type: 3}
   - enemy4: {fileID: 6378106253527548824, guid: 06396b701b27fbb4c9a362c33cb0e6f2, type: 3}
-  - BulletParent: {fileID: 4876808407843291281, guid: be8bd07b44105354fade55cb348fb48d, type: 3}
+  - scoreText: {fileID: 9159188731289380382, guid: 87a99d894f7a77248aa84fd9bf8951c4, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
