@@ -10,7 +10,7 @@ public class tutorial : MonoBehaviour
     {
         if (Input.GetMouseButton(0))
         {
-            Invoke("Tutorial", 1f);
+            Invoke("Tutorial", 0.1f);
         }
     }
 

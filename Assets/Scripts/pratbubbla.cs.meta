@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 3f2f71a918ab86944ae4999f19816cbc
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - tutorialGumma: {fileID: 1797568287330955315, guid: f260e0f835ab64c4d9e4a9b9a107f496, type: 3}
+  - tutorialChild: {fileID: 5308824576782057937, guid: 2b4c5341ffe6e5b46986042102dffd96, type: 3}
+  - childPratbubbla: {fileID: 6943074762580141236, guid: ad4a58f95b741fd43a3ef6f92e51ec3b, type: 3}
+  - gummaPratbubbla: {fileID: 3837014092098917733, guid: 448e36b7ba4e4ad488281a131d756a26, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
