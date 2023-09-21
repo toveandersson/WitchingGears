@@ -38,7 +38,7 @@ public class LivesScript : MonoBehaviour
 
     void gameOver()
     {
-        SceneManager.LoadSceneAsync(1);
+        SceneManager.LoadSceneAsync(4);
     }
 
 }

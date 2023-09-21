@@ -4,6 +4,9 @@ using System.Diagnostics;
 using UnityEngine;
 using System;
 
+using UnityEngine.UI;
+using static Cinemachine.DocumentationSortingAttribute;
+
 public class bullet : MonoBehaviour
 {
     public GameObject explosion;
@@ -15,9 +18,11 @@ public class bullet : MonoBehaviour
     public float bulletSpeed = 10;
 
 
+
     void Start()
     {
         Destroy(gameObject, 10);
+
     }
     void Update()
     {
@@ -40,6 +45,7 @@ public class bullet : MonoBehaviour
         soundEffects.Instance.Kaboom();
         Quaternion noRotation = Quaternion.identity;
         GameObject newGroda = Instantiate(groda, transform.position, noRotation);
+        
 
         //Destroy the newly created explosion object after 1 second.
         Destroy(newExplosion, 1);
