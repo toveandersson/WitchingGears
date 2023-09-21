@@ -9,7 +9,8 @@ public class bigExplotion : MonoBehaviour
     public static bigExplotion Instance { get; private set; }
 
     public GameObject PowerChordUlt;
-    public bool ult = true;
+    public GameObject colliderUlt;
+    public bool ult = false;
     
     void Start()
     {
@@ -32,9 +33,14 @@ public class bigExplotion : MonoBehaviour
         {
             ult = false;
             PowerChordUlt.SetActive(true);
-
-            Invoke("falsk", 2f);
+            Invoke("colliderActive", 1.2f);
+            Invoke("falsk", 1.8f);
         }
+    }
+
+    private void colliderActive()
+    {
+        colliderUlt.SetActive(true);
     }
 
     private void falsk()
@@ -45,5 +51,14 @@ public class bigExplotion : MonoBehaviour
     public void Ult()
     {
         ult = true;
+    }
+
+    private void OnTriggerStay2D(Collider2D other)
+    {
+        if (other.tag == "Enemy")
+        {
+            // Call the DestroyEnemy() method on the enemy script
+            Destroy(other.gameObject);
+        }
     }
 }

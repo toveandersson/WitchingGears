@@ -8,6 +8,8 @@ TagManager:
   - frog
   - hBar1
   - target
+  - Enemy
+  - Props
   layers:
   - Default
   - TransparentFX
@@ -15,7 +17,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - Props
   - 
   - 
   - Hus

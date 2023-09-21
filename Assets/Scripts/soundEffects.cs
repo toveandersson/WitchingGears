@@ -7,6 +7,7 @@ public class soundEffects : MonoBehaviour
     public static soundEffects Instance { get; private set; }
     private AudioSource source;
     public AudioClip disappearingFrog;
+    private AudioClip ultimateSound;
     public AudioClip[] kaboom;
     public AudioClip[] powerup;
     public AudioClip[] evillaugh;
@@ -68,6 +69,12 @@ public class soundEffects : MonoBehaviour
     public void DisapepearingFrog()
     {
         source.clip = disappearingFrog;
+        source.PlayOneShot(source.clip);
+    }
+
+    public void Ultimate()
+    {
+        source.clip = ultimateSound;
         source.PlayOneShot(source.clip);
     }
 

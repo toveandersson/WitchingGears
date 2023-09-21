@@ -11,9 +11,7 @@ public class score : MonoBehaviour
     public int pickedUpFrogs = 0;
     public TextMeshProUGUI scoreText;
     public GameObject frog;
-
-
-    // Start is called before the first frame update
+    public GameObject MTwo;
     void Start()
     {
         scoreText.text = pickedUpFrogs + "/50";
@@ -27,6 +25,10 @@ public class score : MonoBehaviour
             scoreText.text = pickedUpFrogs + "/50";
         }
 
+        if (pickedUpFrogs == 5 || pickedUpFrogs == 10 || pickedUpFrogs == 15 || pickedUpFrogs == 20 || pickedUpFrogs == 25 || pickedUpFrogs == 30 || pickedUpFrogs == 35 || pickedUpFrogs == 40 || pickedUpFrogs == 45)
+        {
+            mTwoAppear();
+        }
         if (pickedUpFrogs == 50)
         {
             youWin();
@@ -34,7 +36,16 @@ public class score : MonoBehaviour
             
     }
 
-    
+    public void mTwoAppear()
+    {
+        MTwo.SetActive(true);
+        Invoke("falsk", 2f);
+    }
+
+    public void falsk()
+    {
+        MTwo.SetActive(false);
+    }
 
     void youWin()
     {
