@@ -12,22 +12,24 @@ public class LivesScript : MonoBehaviour
     public int healthBar = 100;
     public TextMeshProUGUI ScoreText;
     public GameObject hBar1;
-    public GameObject[] enemies;
+
     public Sprite[] healthChunks = new Sprite[10];
+
+
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-       // Enemy enemy = other.gameObject.GetComponent<Enemy>();
-        if (enemies != null)
+
+
+        if (other.gameObject.GetComponent<EnemyMovement>() == false)
         {
-          
-            healthBar -= 5;
-            hBar1.GetComponent<SpriteRenderer>().sprite = healthChunks[(healthBar - 1) / 10];
-            Debug.Log("Eating house");
-            
-
-
+            return;
         }
+
+        healthBar -= 5;
+        hBar1.GetComponent<SpriteRenderer>().sprite = healthChunks[(healthBar - 1) / 10];
+        Debug.Log("Eating house");
+
         if (healthBar == 0)
         {
             gameOver();
