@@ -126,10 +126,10 @@ TextureImporter:
       name: PLAY & EXIT _0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 200
-        height: 200
+        x: 55
+        y: 128
+        width: 137
+        height: 110
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -139,6 +139,27 @@ TextureImporter:
       bones: []
       spriteID: 7579afb559d2aac43af55605b2b57e6e
       internalID: -1608435030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLAY & EXIT _1
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 8
+        width: 128
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdade144c5e573a4d961a5e3517fef02
+      internalID: -943571245
       vertices: []
       indices: 
       edges: []
@@ -155,6 +176,7 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       PLAY & EXIT _0: -1608435030
+      PLAY & EXIT _1: -943571245
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
