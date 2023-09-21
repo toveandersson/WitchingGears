@@ -5,6 +5,7 @@ using TMPro;
 using UnityEngine.SceneManagement;
 using UnityEngine.SocialPlatforms.Impl;
 using Unity.VisualScripting;
+using System;
 
 public class LivesScript : MonoBehaviour
 {
@@ -16,14 +17,15 @@ public class LivesScript : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-        //Enemy enemies = other.gameObject.GetComponent<Enemy>();
+       // Enemy enemy = other.gameObject.GetComponent<Enemy>();
         if (enemies != null)
         {
-            Debug.Log("Eating house");
+          
             healthBar -= 5;
             hBar1.GetComponent<SpriteRenderer>().sprite = healthChunks[(healthBar - 1) / 10];
-            Debug.Log(healthBar);
-            ScoreText.text = "Score: " + healthBar;
+            Debug.Log("Eating house");
+            
+
 
         }
         if (healthBar == 0)
