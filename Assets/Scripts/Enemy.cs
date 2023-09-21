@@ -7,7 +7,7 @@ using static UnityEngine.GraphicsBuffer;
 
 public class Enemy : MonoBehaviour
 {
-    public float timer = 0;
+    public float spawnTimer = 0;
     public GameObject gumma;
     public GameObject bullet;
     private Vector2 spawnPos;
@@ -32,14 +32,14 @@ public class Enemy : MonoBehaviour
         int enemyNum = UnityEngine.Random.Range(0, enemies.Length);
         GameObject.Instantiate(enemies[enemyNum], spawnPos.normalized *spawnDistance, Quaternion.identity, transform);
         spawnDistance = 10;
-        timer = 7;
+        spawnTimer = 3;
     }
 
     void Update()
     {
         //spawna enemy
-        timer -= Time.deltaTime;
-        if (timer < 0)
+        spawnTimer -= Time.deltaTime;
+        if (spawnTimer < 0)
         {
             SpawnEnemy();      
 

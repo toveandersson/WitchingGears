@@ -1,23 +1,49 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class bigExplotion : MonoBehaviour
 {
+    public int bewitchedChildren = 0;
+    public static bigExplotion Instance { get; private set; }
+
     public GameObject PowerChordUlt;
+    public bool ult = true;
     
     void Start()
     {
-        
+        Instance = this;
+    }
+
+    public void Points()
+    {
+        bewitchedChildren++;
+        if (bewitchedChildren == 5)
+        {
+            Ult();
+            bewitchedChildren = 0;
+        }
     }
 
     void Update()
     {
-        if (Input.GetMouseButton(1))
+        if (Input.GetMouseButton(1) && ult == true)
         {
-            GameObject powerChordUlt = Instantiate(PowerChordUlt, transform.position, transform.rotation);
+            ult = false;
+            PowerChordUlt.SetActive(true);
 
-            Destroy(powerChordUlt, 1);
+            Invoke("falsk", 2f);
         }
+    }
+
+    private void falsk()
+    {
+        PowerChordUlt.SetActive(false);
+    }
+
+    public void Ult()
+    {
+        ult = true;
     }
 }
