@@ -35,12 +35,20 @@ public class bigExplotion : MonoBehaviour
             PowerChordUlt.SetActive(true);
             Invoke("colliderActive", 1.2f);
             Invoke("falsk", 1.8f);
+            soundEffects.Instance.Ultimate();
+            score.Instance.falsk();
         }
     }
 
     private void colliderActive()
     {
         colliderUlt.SetActive(true);
+        Invoke("colliderNotActive", 0.1f);
+    }
+
+    private void colliderNotActive()
+    {
+        colliderUlt.SetActive(false);
     }
 
     private void falsk()

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float speed = 3f;
+    public float speed = 4.2f;
     Vector2 position;
     private Rigidbody2D rb2d;
     Animator animator;
@@ -23,7 +23,8 @@ public class PlayerMovement : MonoBehaviour
         float moveDirectionY = Input.GetAxis("Vertical");
 
         Vector2 velocity = new Vector2(moveDirectionX * speed, moveDirectionY * speed);
-        rb2d.velocity = velocity;
+        velocity.Normalize();
+        rb2d.velocity = velocity * speed;
 
         animator.SetFloat("x", Input.GetAxis("Horizontal"));
         animator.SetFloat("y", Input.GetAxis("Vertical"));      

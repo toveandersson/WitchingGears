@@ -7,6 +7,6 @@ public class MenuScript : MonoBehaviour
 {
     public void MenuPlay()
     {
-        SceneManager.LoadSceneAsync(1);
+        SceneManager.LoadSceneAsync(5);
     }
 }

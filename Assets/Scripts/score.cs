@@ -8,6 +8,8 @@ using static Cinemachine.DocumentationSortingAttribute;
 
 public class score : MonoBehaviour
 {
+
+    public static score Instance { get; private set; }
     public int pickedUpFrogs = 0;
     public TextMeshProUGUI scoreText;
     public GameObject frog;
@@ -15,6 +17,11 @@ public class score : MonoBehaviour
     void Start()
     {
         scoreText.text = pickedUpFrogs + "/50";
+    }
+
+    private void Awake()
+    {
+        Instance = this;
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -39,12 +46,12 @@ public class score : MonoBehaviour
     public void mTwoAppear()
     {
         MTwo.SetActive(true);
-        Invoke("falsk", 2f);
     }
 
     public void falsk()
     {
         MTwo.SetActive(false);
+
     }
 
     void youWin()
