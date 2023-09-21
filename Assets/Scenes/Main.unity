@@ -1640,6 +1640,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2091940891339789896, guid: 03f9e191737cf4049a5ac72a3a96ec05, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1229967318}
+    - targetCorrespondingSourceObject: {fileID: 2091940891339789896, guid: 03f9e191737cf4049a5ac72a3a96ec05, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1642021422}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 4537779912607351069, guid: 03f9e191737cf4049a5ac72a3a96ec05, type: 3}
       insertIndex: -1
@@ -19340,6 +19343,73 @@ MonoBehaviour:
         m_Calls: []
   m_LegacyBlendHint: 0
   m_ComponentOwner: {fileID: 373180287}
+--- !u!1 &1642021421
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1642021422}
+  - component: {fileID: 1642021423}
+  m_Layer: 0
+  m_Name: powerChordCollider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1642021422
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1642021421}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.5206721, y: 0.85927427, z: -4.2339706}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 488479558}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &1642021423
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1642021421}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.6870723, y: -0.49076557}
+  serializedVersion: 2
+  m_Radius: 2.593934
 --- !u!1 &1697106429
 GameObject:
   m_ObjectHideFlags: 0
@@ -19567,6 +19637,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnTimer: 0
+  spawnTimerTimer: 20
   gumma: {fileID: 2987713034171269238, guid: e72ec1c804e95b448bb5bbdafced0f13, type: 3}
   bullet: {fileID: 1620303445897884430, guid: 10f20d14558ed9f4681b0140b7930bd1, type: 3}
   spawnDistance: 10
