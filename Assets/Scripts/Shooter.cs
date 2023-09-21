@@ -10,7 +10,6 @@ public class Shooter : MonoBehaviour
     public Transform shootPoint; //the location that we want to spawn our shots
     public GameObject shootingPrefab;
 
-    // Update is called once per frame
     void Update()
     {
         Vector2 direction = Input.mousePosition - Camera.main.WorldToScreenPoint(transform.position);
