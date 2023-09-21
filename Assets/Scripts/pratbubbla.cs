@@ -13,16 +13,23 @@ public class pratbubbla : MonoBehaviour
     public GameObject gummaPratbubbla;
     private bool counter = false;
 
-    void Update()
+    private void Start()
     {
+        StartCoroutine(ShowObjects());
+    }
+    void Update()
+    {       
+
         if (Input.GetMouseButtonDown(0) && !counter)
         {
-            StartCoroutine(ShowObjects());
-           
+            tutorialGumma.SetActive(true);
+            gummaPratbubbla.SetActive(true);
+            counter = true;
         }
+
         if (Input.GetMouseButtonDown(0) && counter)
         {
-            StartCoroutine(ShowObjectsTwo());
+            SceneManager.LoadScene(2);
         }
     }
     IEnumerator ShowObjects()
@@ -30,16 +37,6 @@ public class pratbubbla : MonoBehaviour
         tutorialChild.SetActive(true);
         childPratbubbla.SetActive(true);
         yield return new WaitForSeconds(0.1f);
-        counter = true;
-
-    }
-    IEnumerator ShowObjectsTwo()
-    {       
-        tutorialGumma.SetActive(true);
-        gummaPratbubbla.SetActive(true);
-        yield return new WaitForSeconds(1.5f);
-
-        SceneManager.LoadScene(2);
     }
 }
 
