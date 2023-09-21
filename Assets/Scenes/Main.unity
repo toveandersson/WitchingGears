@@ -1295,11 +1295,6 @@ MonoBehaviour:
   healthBar: 100
   ScoreText: {fileID: 0}
   hBar1: {fileID: 1251668139}
-  enemies:
-  - {fileID: 4053848849395179717, guid: 7d01daeb16bc86945b9d9d2cb5a94976, type: 3}
-  - {fileID: 3765578331839849400, guid: db1c2c250a520bf44927e075fb4e0ce9, type: 3}
-  - {fileID: 7054122763641497069, guid: b413f76b7d6b3ef47aeb700a4acbc4d9, type: 3}
-  - {fileID: 6378106253527548824, guid: 06396b701b27fbb4c9a362c33cb0e6f2, type: 3}
   healthChunks:
   - {fileID: 378739769, guid: 6e5d3c60f1e7d6e439f9a96d3f7cb890, type: 3}
   - {fileID: 1293507587, guid: 6e5d3c60f1e7d6e439f9a96d3f7cb890, type: 3}
@@ -18460,7 +18455,7 @@ GameObject:
   - component: {fileID: 1789331217}
   m_Layer: 12
   m_Name: enemySpawner
-  m_TagString: Untagged
+  m_TagString: target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18557,7 +18552,7 @@ CircleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -18734,7 +18729,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1871842570
 MonoBehaviour:
   m_ObjectHideFlags: 0
