@@ -156,7 +156,6 @@ MonoBehaviour:
   tutorialChild: {fileID: 1149603049}
   childPratbubbla: {fileID: 825468538}
   gummaPratbubbla: {fileID: 1076377270}
-  counter: 0
 --- !u!4 &3843851
 Transform:
   m_ObjectHideFlags: 0
