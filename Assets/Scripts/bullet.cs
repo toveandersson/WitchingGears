@@ -29,7 +29,7 @@ public class bullet : MonoBehaviour
     {
         Enemy enemy = other.gameObject.GetComponent<Enemy>();
 
-        if (enemy != null)
+        if (enemy != null && enemy.gameObject.tag != "target")
         {
             // Call the DestroyEnemy() method on the enemy script
             enemy.DestroyEnemy();
