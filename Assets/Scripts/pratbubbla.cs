@@ -29,7 +29,8 @@ public class pratbubbla : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0) && counter)
         {
-            SceneManager.LoadScene(2);
+            Invoke("nextScene", 2f);
+                
         }
     }
     IEnumerator ShowObjects()
@@ -37,6 +38,11 @@ public class pratbubbla : MonoBehaviour
         tutorialChild.SetActive(true);
         childPratbubbla.SetActive(true);
         yield return new WaitForSeconds(0.1f);
+    }
+
+    private void nextScene()
+    {
+        SceneManager.LoadScene(2);
     }
 }
 
