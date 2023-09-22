@@ -27,11 +27,15 @@ public class score : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other != null)
+
+        if (other.gameObject.GetComponent<Frog>() == false)
         {
-            pickedUpFrogs++;
-            scoreText.text = pickedUpFrogs + "/50";
+            return;
         }
+
+        pickedUpFrogs++;
+        scoreText.text = pickedUpFrogs + "/50";
+        
 
         if (pickedUpFrogs == 5 || pickedUpFrogs == 10 || pickedUpFrogs == 15 || pickedUpFrogs == 20 || pickedUpFrogs == 25 || pickedUpFrogs == 30 || pickedUpFrogs == 35 || pickedUpFrogs == 40 || pickedUpFrogs == 45)
         {

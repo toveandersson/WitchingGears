@@ -144,6 +144,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2417f03794c3f3f439fb949736c364e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ribbitTimer: 2
+  frogDyingTimer: 7
+  animFrogPop: {fileID: 0}
   frog: {fileID: 737231251677861440}
 --- !u!50 &-2084405202043555398
 Rigidbody2D:

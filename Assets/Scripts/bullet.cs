@@ -41,7 +41,7 @@ public class bullet : MonoBehaviour
         }
         //Create a new explosion and save that explosion in a variable. +shake the camera with soundeffect
         GameObject newExplosion = Instantiate(explosion, transform.position, transform.rotation);
-        cameraMovement.Instance.ShakeCamera(5f, 0.1f);
+        cameraMovement.Instance.ShakeCamera(3f, 0.1f);
         soundEffects.Instance.Kaboom();
         Quaternion noRotation = Quaternion.identity;
         GameObject newGroda = Instantiate(groda, transform.position, noRotation);

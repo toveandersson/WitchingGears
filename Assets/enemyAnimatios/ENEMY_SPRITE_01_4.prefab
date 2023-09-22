@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: -1936033529716803526}
   - component: {fileID: -2173028315915779374}
   - component: {fileID: -3793146109454731691}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: ENEMY_SPRITE_01_4
   m_TagString: Enemy
   m_Icon: {fileID: 0}
