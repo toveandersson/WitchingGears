@@ -11,20 +11,15 @@ public class bigExplotion : MonoBehaviour
     public GameObject PowerChordUlt;
     public GameObject colliderUlt;
     public bool ult = false;
+    public GameObject groda;
+    public GameObject animUlt;
+
     
     void Start()
     {
         Instance = this;
     }
 
-    public void Points()
-    {
-        bewitchedChildren++;
-        if (bewitchedChildren == 5 || bewitchedChildren == 10 || bewitchedChildren == 15 || bewitchedChildren == 20 || bewitchedChildren == 25 || bewitchedChildren == 30 || bewitchedChildren == 35 || bewitchedChildren == 40 || bewitchedChildren == 45)
-        {
-            bewitchedChildren = 0;
-        }
-    }
 
     void Update()
     {
@@ -44,7 +39,7 @@ public class bigExplotion : MonoBehaviour
     private void ultCameraShake()
     {
 
-        cameraMovement.Instance.ShakeCamera(2f, 0.4f);
+        cameraMovement.Instance.ShakeCamera(2.4f, 0.9f);
     }
 
     private void colliderActive()
@@ -74,6 +69,12 @@ public class bigExplotion : MonoBehaviour
         {
             // Call the DestroyEnemy() method on the enemy script
             Destroy(other.gameObject);
+            Quaternion noRotation = Quaternion.identity;
+            GameObject newGroda = Instantiate(groda, other.transform.position, noRotation);
+            GameObject newExplosion = Instantiate(animUlt, other.transform.position, noRotation);
+
+            Destroy(newExplosion, 0.5f);
+
         }
     }
 }

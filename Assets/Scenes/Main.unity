@@ -1162,6 +1162,8 @@ MonoBehaviour:
   PowerChordUlt: {fileID: 1229967315}
   colliderUlt: {fileID: 1888536840}
   ult: 0
+  groda: {fileID: 737231251677861440, guid: 31ed724c7022ea34da46c920a0ec0b0a, type: 3}
+  animUlt: {fileID: 5267515048168521209, guid: 58ac790e73167d34481a27ecde551e52, type: 3}
 --- !u!114 &488479570
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1268,7 +1270,10 @@ Transform:
   m_LocalPosition: {x: -1.45, y: -1.11, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1251668141}
+  - {fileID: 1571735930}
+  - {fileID: 551182806}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &519420033
@@ -1385,7 +1390,7 @@ Transform:
   m_LocalScale: {x: 0.65, y: 0.7, z: 0.71716}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1626422030}
+  m_Father: {fileID: 519420032}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &551182807
 SpriteRenderer:
@@ -1730,6 +1735,7 @@ MonoBehaviour:
   healthBar: 100
   ScoreText: {fileID: 0}
   hBar1: {fileID: 1251668139}
+  eatingTimer: 0
   healthChunks:
   - {fileID: 378739769, guid: 6e5d3c60f1e7d6e439f9a96d3f7cb890, type: 3}
   - {fileID: 1293507587, guid: 6e5d3c60f1e7d6e439f9a96d3f7cb890, type: 3}
@@ -6656,7 +6662,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 44979121b364fec458b98de6267bcf1e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -19370,7 +19376,7 @@ Transform:
   m_LocalScale: {x: 0.65, y: 0.7, z: 0.71716}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1626422030}
+  m_Father: {fileID: 519420032}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1571735931
 SpriteRenderer:
@@ -19594,9 +19600,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 373180287}
-  - {fileID: 1251668141}
-  - {fileID: 1571735930}
-  - {fileID: 551182806}
   - {fileID: 687524302}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -20767,7 +20770,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 1626422030}
+    m_TransformParent: {fileID: 519420032}
     m_Modifications:
     - target: {fileID: 80881847020856077, guid: 74454bc727c24af4a8ccb695e727a420, type: 3}
       propertyPath: m_LocalScale.x

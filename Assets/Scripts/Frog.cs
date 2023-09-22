@@ -15,8 +15,7 @@ public class Frog : MonoBehaviour
         collision.gameObject.GetComponent<bigExplotion>();         
         soundEffects.Instance.StepOnFrog();
         Destroy(gameObject);
-        bigExplotion.Instance.Points();
-        
+        //animation
     }
 
     private void Update()
@@ -28,6 +27,8 @@ public class Frog : MonoBehaviour
             soundEffects.Instance.DisapepearingFrog();
             Destroy(gameObject);
             frogDyingTimer = 7;
+            //animation
+
         }
 
         if ( ribbitTimer < 0 )
