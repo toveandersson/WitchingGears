@@ -31,7 +31,7 @@ public class LivesScript : MonoBehaviour
 
         if (eatingTimer < 0) 
         {
-            healthBar -= 1;
+            healthBar -= 2;
             eatingTimer += 2;
         }
         
