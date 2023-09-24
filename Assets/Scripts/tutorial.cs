@@ -8,15 +8,18 @@ public class tutorial : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetMouseButton(0))
+        if (Input.GetMouseButtonDown(0))
         {
-            Invoke("Tutorial", 0.1f);
+            Invoke("Tutorial", 0.5f);
         }
     }
 
     void Tutorial()
     {
-        SceneManager.LoadScene(2);
+        if (Input.GetMouseButtonDown(0))
+        {
+            SceneManager.LoadScene(2);
+        }
 
     }
 

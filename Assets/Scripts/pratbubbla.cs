@@ -20,18 +20,15 @@ public class pratbubbla : MonoBehaviour
     void Update()
     {       
 
-        if (Input.GetMouseButtonDown(0) && !counter)
+        if (Input.GetMouseButtonDown(0))
         {
             tutorialGumma.SetActive(true);
             gummaPratbubbla.SetActive(true);
             counter = true;
+
+            Invoke("next", 1f);
         }
 
-        if (Input.GetMouseButtonDown(0) && counter)
-        {
-            Invoke("nextScene", 2f);
-                
-        }
     }
     IEnumerator ShowObjects()
     {
@@ -40,10 +37,12 @@ public class pratbubbla : MonoBehaviour
         yield return new WaitForSeconds(0.1f);
     }
 
-    private void nextScene()
+    private void next()
     {
         SceneManager.LoadScene(2);
+ 
     }
+
 }
 
 
