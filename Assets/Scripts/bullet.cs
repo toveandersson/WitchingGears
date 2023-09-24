@@ -48,7 +48,7 @@ public class bullet : MonoBehaviour
         
 
         //Destroy the newly created explosion object after 1 second.
-        Destroy(newExplosion, 1);
+        Destroy(newExplosion, 0.5f);
 
         //Ha en gå sönder animation här också sen
 

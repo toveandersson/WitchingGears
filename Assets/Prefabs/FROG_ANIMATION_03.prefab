@@ -146,7 +146,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ribbitTimer: 2
   frogDyingTimer: 7
-  animFrogPop: {fileID: 0}
+  frogPop: {fileID: 3571705425072151141, guid: e89913095b66f7849aa2bbdeba97096c, type: 3}
   frog: {fileID: 737231251677861440}
 --- !u!50 &-2084405202043555398
 Rigidbody2D:

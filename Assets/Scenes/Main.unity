@@ -1666,7 +1666,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 30
+  m_SortingOrder: 400
   m_Sprite: {fileID: 685283615, guid: 031dc05448702664282fcd35589c8220, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1779,7 +1779,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.012957573, y: -0.78048277}
+  m_Offset: {x: -0.036531687, y: -0.73063767}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1790,7 +1790,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.8663788, y: 2.4390345}
+  m_Size: {x: 2.4885535, y: 2.5387247}
   m_EdgeRadius: 0
 --- !u!4 &671272689 stripped
 Transform:
@@ -6662,7 +6662,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 44979121b364fec458b98de6267bcf1e, type: 2}
+  - {fileID: 2100000, guid: c629c6154971854459d56a0868babdb1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -19800,7 +19800,15 @@ MonoBehaviour:
   - {fileID: 8300000, guid: dac08d0344f47e34d857fa3f8a91869c, type: 3}
   steponfrog:
   - {fileID: 8300000, guid: 2306e53778e0ee842b8295e9025e2740, type: 3}
-  - {fileID: 8300000, guid: 31ba97fb2f12cdb4295c3a6ee0d75f58, type: 3}
+  eating:
+  - {fileID: 8300000, guid: 0456dca9ae932734bbe05c58236b76de, type: 3}
+  - {fileID: 8300000, guid: 3e9d713e56bd9eb47a57b1bf2857d1eb, type: 3}
+  - {fileID: 8300000, guid: 380a56f7c1ec12c4982f47140a4f2303, type: 3}
+  - {fileID: 8300000, guid: df6c223c1e08e304ea0d5613910344e4, type: 3}
+  - {fileID: 8300000, guid: 8d056fe82815cf64b906dc45624c34b4, type: 3}
+  - {fileID: 8300000, guid: cfb2b404e94c4894ca44e38f50fef6e3, type: 3}
+  - {fileID: 8300000, guid: 118e596e46f5ad94591e6c6a87f44f43, type: 3}
+  - {fileID: 8300000, guid: 999ef1671e6cc8d4f84daa22d9216477, type: 3}
   laughTimer: 5
 --- !u!4 &1697106432
 Transform:

@@ -13,6 +13,7 @@ public class soundEffects : MonoBehaviour
     public AudioClip[] evillaugh;
     public AudioClip[] frogsound;
     public AudioClip[] steponfrog;
+    public AudioClip[] eating;
     public float laughTimer = 5;
     private void Awake()
     {
@@ -77,6 +78,14 @@ public class soundEffects : MonoBehaviour
         source.clip = ultimateSound;
         source.volume = source.volume * 5f;
         source.PlayOneShot(source.clip);
+    }
+
+    public void Eating()
+    {
+        int i = Random.Range(0, eating.Length);
+        source.clip = eating[i];
+        source.PlayOneShot(source.clip);
+
     }
 
 }
