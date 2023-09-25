@@ -1158,12 +1158,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 043fdf2f18c0b1447962972df5d81443, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bewitchedChildren: 0
   PowerChordUlt: {fileID: 1229967315}
   colliderUlt: {fileID: 1888536840}
-  ult: 0
   groda: {fileID: 737231251677861440, guid: 31ed724c7022ea34da46c920a0ec0b0a, type: 3}
   animUlt: {fileID: 5267515048168521209, guid: 58ac790e73167d34481a27ecde551e52, type: 3}
+  bewitchedChildren: 0
+  ult: 0
 --- !u!114 &488479570
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19809,7 +19809,6 @@ MonoBehaviour:
   - {fileID: 8300000, guid: cfb2b404e94c4894ca44e38f50fef6e3, type: 3}
   - {fileID: 8300000, guid: 118e596e46f5ad94591e6c6a87f44f43, type: 3}
   - {fileID: 8300000, guid: 999ef1671e6cc8d4f84daa22d9216477, type: 3}
-  laughTimer: 5
 --- !u!4 &1697106432
 Transform:
   m_ObjectHideFlags: 0

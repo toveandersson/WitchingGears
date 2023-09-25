@@ -18,7 +18,6 @@ public class Frog : MonoBehaviour
         GameObject newfrogpop = Instantiate(frogPop, transform.position, Quaternion.identity);
         Destroy(gameObject);
         Destroy(newfrogpop, 0.4f);
-        //animation
     }
 
     private void Update()
