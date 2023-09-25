@@ -3,7 +3,9 @@ guid: 475ba6a398da24a468918d46e546825d
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - ScoreText: {instanceID: 0}
+  - visualHealthBar: {fileID: 2044424035830351205, guid: 74454bc727c24af4a8ccb695e727a420, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

@@ -11,15 +11,9 @@ public class LivesScript : MonoBehaviour
 {
     public int healthBar = 100;
     public TextMeshProUGUI ScoreText;
-    public GameObject hBar1;
+    public GameObject visualHealthBar;
     public float eatingTimer = 0;
-
     public Sprite[] healthChunks = new Sprite[10];
-
-    private void Update()
-    {
-        
-    }
 
     private void OnCollisionStay2D(Collision2D other)
     {
@@ -36,15 +30,15 @@ public class LivesScript : MonoBehaviour
             soundEffects.Instance.Eating();
         }
         
-        hBar1.GetComponent<SpriteRenderer>().sprite = healthChunks[(healthBar - 1) / 10];
+        visualHealthBar.GetComponent<SpriteRenderer>().sprite = healthChunks[(healthBar - 1) / 10];
 
         if (healthBar == 0)
         {
-            gameOver();
+            GameOver();
         }
     }
 
-    void gameOver()
+    void GameOver()
     {
         SceneManager.LoadSceneAsync(4);
     }
