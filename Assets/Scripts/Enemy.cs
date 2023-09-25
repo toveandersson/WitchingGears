@@ -7,23 +7,18 @@ using static UnityEngine.GraphicsBuffer;
 
 public class Enemy : MonoBehaviour
 {
-    public float spawnTimer = 0;
-    public float spawnTimerTimer = 20;
     public GameObject gumma;
     public GameObject bullet;
-    private Vector2 spawnPos;
-    public int spawnDistance = 3;
     public static GameObject enemy01;
     public static GameObject enemy02;
     public static GameObject enemy03;
     public static GameObject enemy04;
-
     public GameObject[] enemies = { enemy01, enemy02, enemy03, enemy04 };
-    
-    void Start()
-    {
 
-    }
+    public float spawnTimer = 0;
+    public float spawnTimerTimer = 20;
+    public int spawnDistance = 3;
+    private Vector2 spawnPos;
 
     void SpawnEnemy()
     {

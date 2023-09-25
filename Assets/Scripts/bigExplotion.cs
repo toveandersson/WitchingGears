@@ -7,9 +7,9 @@ public class bigExplotion : MonoBehaviour
 {
     public static bigExplotion Instance { get; private set; }
 
-    public GameObject PowerChordUlt;
-    public GameObject colliderUlt;
-    public GameObject groda;
+    public GameObject PowerChordUlt; //ult
+    public GameObject colliderUlt; //ultens collider
+    public GameObject groda; 
     public GameObject animUlt;
 
     public int bewitchedChildren = 0;
@@ -32,9 +32,9 @@ public class bigExplotion : MonoBehaviour
     private void DoUlt()
     {
         PowerChordUlt.SetActive(true);
-        Invoke("ColliderActive", 1.2f);
-        Invoke("Falsk", 1.8f);
-        Invoke("UltCameraShake", 1.1f);
+        Invoke(nameof(ColliderActive), 1.2f);
+        Invoke(nameof(PowerChordUltOver), 1.8f);
+        Invoke(nameof(UltCameraShake), 1.1f);
         soundEffects.Instance.Ultimate();
         score.Instance.falsk();
     }
@@ -50,18 +50,17 @@ public class bigExplotion : MonoBehaviour
         colliderUlt.SetActive(false);
     }
     
-    public void Ult()
+    public void UltTrue()
     {
         ult = true;
     }
 
     private void UltCameraShake()
     {
-
         cameraMovement.Instance.ShakeCamera(2.4f, 0.9f);
     }
 
-    private void Falsk()
+    private void PowerChordUltOver()
     {
         PowerChordUlt.SetActive(false);
     }

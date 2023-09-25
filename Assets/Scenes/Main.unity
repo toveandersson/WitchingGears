@@ -1176,10 +1176,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd10f699c59f414b8063751bc35729b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickedUpFrogs: 0
-  scoreText: {fileID: 1992209795}
   frog: {fileID: 737231251677861440, guid: 31ed724c7022ea34da46c920a0ec0b0a, type: 3}
   MTwo: {fileID: 687524299}
+  pickedUpFrogs: 0
+  scoreText: {fileID: 1992209795}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -19883,16 +19883,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df7859c599e99c74aa91fe50691929fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnTimer: 0
-  spawnTimerTimer: 20
   gumma: {fileID: 2987713034171269238, guid: e72ec1c804e95b448bb5bbdafced0f13, type: 3}
   bullet: {fileID: 1620303445897884430, guid: 10f20d14558ed9f4681b0140b7930bd1, type: 3}
-  spawnDistance: 10
   enemies:
   - {fileID: 4053848849395179717, guid: 7d01daeb16bc86945b9d9d2cb5a94976, type: 3}
   - {fileID: 3765578331839849400, guid: db1c2c250a520bf44927e075fb4e0ce9, type: 3}
   - {fileID: 7054122763641497069, guid: b413f76b7d6b3ef47aeb700a4acbc4d9, type: 3}
   - {fileID: 6378106253527548824, guid: 06396b701b27fbb4c9a362c33cb0e6f2, type: 3}
+  spawnTimer: 0
+  spawnTimerTimer: 20
+  spawnDistance: 10
 --- !u!50 &1789331216
 Rigidbody2D:
   serializedVersion: 4

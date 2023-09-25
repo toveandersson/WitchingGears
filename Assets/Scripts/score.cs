@@ -9,12 +9,12 @@ using static Cinemachine.DocumentationSortingAttribute;
 
 public class score : MonoBehaviour
 {
-
     public static score Instance { get; private set; }
-    public int pickedUpFrogs = 0;
-    public TextMeshProUGUI scoreText;
     public GameObject frog;
     public GameObject MTwo;
+
+    public int pickedUpFrogs = 0;
+    public TextMeshProUGUI scoreText;
     void Start()
     {
         scoreText.text = pickedUpFrogs + "/50";
@@ -37,11 +37,12 @@ public class score : MonoBehaviour
         scoreText.text = pickedUpFrogs + "/50";
         
 
-        if (pickedUpFrogs == 5 || pickedUpFrogs == 10 || pickedUpFrogs == 15 || pickedUpFrogs == 20 || pickedUpFrogs == 25 || pickedUpFrogs == 30 || pickedUpFrogs == 35 || pickedUpFrogs == 40 || pickedUpFrogs == 45)
+        if (pickedUpFrogs % 5 == 0)
         {
             mTwoAppear();
-            bigExplotion.Instance.Ult();
-        }
+            bigExplotion.Instance.UltTrue();
+        } 
+        
         if (pickedUpFrogs == 50)
         {
             youWin();
@@ -52,7 +53,6 @@ public class score : MonoBehaviour
     public void mTwoAppear()
     {
         MTwo.SetActive(true);
-
     }
 
     public void falsk()
