@@ -28,9 +28,4 @@ public class EnemyMovement : MonoBehaviour
         animator.SetFloat("x", direction.x);
         animator.SetFloat("y", direction.y);
     }
-
-
-
-
-
 }

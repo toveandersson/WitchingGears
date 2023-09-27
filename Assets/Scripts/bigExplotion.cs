@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class bigExplotion : MonoBehaviour
+public class BigExplotion : MonoBehaviour
 {
-    public static bigExplotion Instance { get; private set; }
+    public static BigExplotion Instance { get; private set; }
 
     public GameObject PowerChordUlt; //ult
     public GameObject colliderUlt; //ultens collider
@@ -42,7 +42,16 @@ public class bigExplotion : MonoBehaviour
     private void ColliderActive()
     {
         colliderUlt.SetActive(true);
-        Invoke("ColliderNotActive", 0.1f);
+        Invoke(nameof(ColliderNotActive), 0.1f);
+    }
+
+    private void PowerChordUltOver()
+    {
+        PowerChordUlt.SetActive(false);
+    }
+    private void UltCameraShake()
+    {
+        CameraMovement.Instance.ShakeCamera(2.4f, 0.9f);
     }
 
     private void ColliderNotActive()
@@ -53,16 +62,6 @@ public class bigExplotion : MonoBehaviour
     public void UltTrue()
     {
         ult = true;
-    }
-
-    private void UltCameraShake()
-    {
-        CameraMovement.Instance.ShakeCamera(2.4f, 0.9f);
-    }
-
-    private void PowerChordUltOver()
-    {
-        PowerChordUlt.SetActive(false);
     }
 
     private void OnTriggerStay2D(Collider2D other)

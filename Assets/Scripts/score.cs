@@ -40,7 +40,7 @@ public class score : MonoBehaviour
         if (pickedUpFrogs % 5 == 0)
         {
             mTwoAppear();
-            bigExplotion.Instance.UltTrue();
+            BigExplotion.Instance.UltTrue();
         } 
         
         if (pickedUpFrogs == 50)

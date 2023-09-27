@@ -14,7 +14,7 @@ public class Frog : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        collision.gameObject.GetComponent<bigExplotion>();         
+        collision.gameObject.GetComponent<BigExplotion>();         
         SoundEffects.Instance.StepOnFrog();
         Destroy(gameObject);
         GameObject newfrogpop = Instantiate(frogPop, transform.position, Quaternion.identity);
@@ -34,7 +34,6 @@ public class Frog : MonoBehaviour
         {
             FrogRibbit();
         }
-
     }
     private void FrogDying()
     {

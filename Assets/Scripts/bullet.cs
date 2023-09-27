@@ -35,15 +35,24 @@ public class bullet : MonoBehaviour
         {
             enemy.DestroyEnemy();
         }
+        TransformEnemyEffects();
+        SpawnGroda();
+        Destroy(other.gameObject);
+        Destroy(gameObject, 0.01f);
+        //TODO: add bottle crash animation
+    }
+    
+    private void TransformEnemyEffects()
+    {
         GameObject newExplosion = Instantiate(explosion, transform.position, transform.rotation);
         CameraMovement.Instance.ShakeCamera(3f, 0.1f);
         SoundEffects.Instance.Kaboom();
+        Destroy(newExplosion, 0.5f);
+    }
+
+    private void SpawnGroda()
+    {
         Quaternion noRotation = Quaternion.identity;
         GameObject newGroda = Instantiate(groda, transform.position, noRotation);
-        Destroy(newExplosion, 0.5f);
-        Invoke("death", 0.01f);
-        Destroy(other.gameObject);
-        Destroy(gameObject, 0.1f);
-        //TODO: add bottle crash animation
     }
 }
