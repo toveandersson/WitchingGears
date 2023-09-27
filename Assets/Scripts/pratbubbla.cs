@@ -17,9 +17,9 @@ public class pratbubbla : MonoBehaviour
     {
         StartCoroutine(ShowObjects());
     }
+
     void Update()
     {       
-
         if (Input.GetMouseButtonDown(0))
         {
             tutorialGumma.SetActive(true);
@@ -28,8 +28,8 @@ public class pratbubbla : MonoBehaviour
 
             Invoke("next", 1f);
         }
-
     }
+
     IEnumerator ShowObjects()
     {
         tutorialChild.SetActive(true);
@@ -42,7 +42,6 @@ public class pratbubbla : MonoBehaviour
         SceneManager.LoadScene(2);
  
     }
-
 }
 
 

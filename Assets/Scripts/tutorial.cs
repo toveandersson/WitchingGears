@@ -20,7 +20,5 @@ public class tutorial : MonoBehaviour
         {
             SceneManager.LoadScene(2);
         }
-
     }
-
 }

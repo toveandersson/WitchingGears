@@ -45,5 +45,4 @@ public class CameraMovement : MonoBehaviour
             }
         }
     }
-
 }

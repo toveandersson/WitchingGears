@@ -42,7 +42,6 @@ public class LivesScript : MonoBehaviour
     {
         SceneManager.LoadSceneAsync(4);
     }
-
 }
 
 

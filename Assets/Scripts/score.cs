@@ -55,7 +55,7 @@ public class score : MonoBehaviour
         MTwo.SetActive(true);
     }
 
-    public void falsk()
+    public void MTwoNotActive()
     {
         MTwo.SetActive(false);
     }

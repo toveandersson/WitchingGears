@@ -10,12 +10,12 @@ public class EnemyMovement : MonoBehaviour
     Rigidbody2D rb2D;
     Transform target;
     public float speed = 1;
+    
     void Start()
 
     {
         target = GameObject.FindGameObjectWithTag("target").transform;
         rb2D = GetComponent<Rigidbody2D>();
-
         animator = GetComponent<Animator>();
     }
 

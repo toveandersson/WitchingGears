@@ -33,10 +33,10 @@ public class BigExplotion : MonoBehaviour
     {
         PowerChordUlt.SetActive(true);
         Invoke(nameof(ColliderActive), 1.2f);
-        Invoke(nameof(PowerChordUltOver), 1.8f);
         Invoke(nameof(UltCameraShake), 1.1f);
         SoundEffects.Instance.Ultimate();
-        score.Instance.falsk();
+        Invoke(nameof(PowerChordUltOver), 1.8f);
+        score.Instance.MTwoNotActive();
     }
 
     private void ColliderActive()
@@ -45,13 +45,13 @@ public class BigExplotion : MonoBehaviour
         Invoke(nameof(ColliderNotActive), 0.1f);
     }
 
-    private void PowerChordUltOver()
-    {
-        PowerChordUlt.SetActive(false);
-    }
     private void UltCameraShake()
     {
         CameraMovement.Instance.ShakeCamera(2.4f, 0.9f);
+    }
+    private void PowerChordUltOver()
+    {
+        PowerChordUlt.SetActive(false);
     }
 
     private void ColliderNotActive()
@@ -68,7 +68,6 @@ public class BigExplotion : MonoBehaviour
     {
         if (other.tag == "Enemy")
         {
-            // Call the DestroyEnemy() method on the enemy script
             Destroy(other.gameObject);
             Quaternion noRotation = Quaternion.identity;
             GameObject newGroda = Instantiate(groda, other.transform.position, noRotation);

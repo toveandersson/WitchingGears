@@ -25,6 +25,7 @@ public class Frog : MonoBehaviour
     {
         ribbitTimer -= Time.deltaTime;
         frogDyingTimer -= Time.deltaTime;
+
         if ( frogDyingTimer < 0)
         {
             FrogDying();
@@ -35,6 +36,7 @@ public class Frog : MonoBehaviour
             FrogRibbit();
         }
     }
+
     private void FrogDying()
     {
         SoundEffects.Instance.DisapepearingFrog();
@@ -50,5 +52,4 @@ public class Frog : MonoBehaviour
         SoundEffects.Instance.FrogSound();
         ribbitTimer = 2;
     }
-
 }
