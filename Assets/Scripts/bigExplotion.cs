@@ -35,7 +35,7 @@ public class bigExplotion : MonoBehaviour
         Invoke(nameof(ColliderActive), 1.2f);
         Invoke(nameof(PowerChordUltOver), 1.8f);
         Invoke(nameof(UltCameraShake), 1.1f);
-        soundEffects.Instance.Ultimate();
+        SoundEffects.Instance.Ultimate();
         score.Instance.falsk();
     }
 
@@ -57,7 +57,7 @@ public class bigExplotion : MonoBehaviour
 
     private void UltCameraShake()
     {
-        cameraMovement.Instance.ShakeCamera(2.4f, 0.9f);
+        CameraMovement.Instance.ShakeCamera(2.4f, 0.9f);
     }
 
     private void PowerChordUltOver()

@@ -15,7 +15,7 @@ public class Frog : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         collision.gameObject.GetComponent<bigExplotion>();         
-        soundEffects.Instance.StepOnFrog();
+        SoundEffects.Instance.StepOnFrog();
         Destroy(gameObject);
         GameObject newfrogpop = Instantiate(frogPop, transform.position, Quaternion.identity);
         Destroy(newfrogpop, 0.4f);
@@ -38,7 +38,7 @@ public class Frog : MonoBehaviour
     }
     private void FrogDying()
     {
-        soundEffects.Instance.DisapepearingFrog();
+        SoundEffects.Instance.DisapepearingFrog();
         Destroy(gameObject);
         frogDyingTimer = 7;
         Quaternion noRotation = Quaternion.identity;
@@ -48,7 +48,7 @@ public class Frog : MonoBehaviour
 
     private void FrogRibbit()
     {
-        soundEffects.Instance.FrogSound();
+        SoundEffects.Instance.FrogSound();
         ribbitTimer = 2;
     }
 

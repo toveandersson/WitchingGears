@@ -27,7 +27,7 @@ public class LivesScript : MonoBehaviour
         {
             healthBar -= 2;
             eatingTimer += 2;
-            soundEffects.Instance.Eating();
+            SoundEffects.Instance.Eating();
         }
         
         visualHealthBar.GetComponent<SpriteRenderer>().sprite = healthChunks[(healthBar - 1) / 10];

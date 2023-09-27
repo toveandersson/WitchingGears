@@ -20,8 +20,8 @@ public class bullet : MonoBehaviour
     void Start()
     {
         Destroy(gameObject, 10);
-
     }
+
     void Update()
     {
         transform.position += transform.up * bulletSpeed * Time.deltaTime;
@@ -31,36 +31,19 @@ public class bullet : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D other)
     {
         Enemy enemy = other.gameObject.GetComponent<Enemy>();
-
         if (enemy != null && (enemy.gameObject.tag != "target" || enemy.gameObject.tag != "Props"))
         {
-            // Call the DestroyEnemy() method on the enemy script
             enemy.DestroyEnemy();
         }
-        //Create a new explosion and save that explosion in a variable. +shake the camera with soundeffect
         GameObject newExplosion = Instantiate(explosion, transform.position, transform.rotation);
-        cameraMovement.Instance.ShakeCamera(3f, 0.1f);
-        soundEffects.Instance.Kaboom();
+        CameraMovement.Instance.ShakeCamera(3f, 0.1f);
+        SoundEffects.Instance.Kaboom();
         Quaternion noRotation = Quaternion.identity;
         GameObject newGroda = Instantiate(groda, transform.position, noRotation);
-        
-
-        //Destroy the newly created explosion object after 1 second.
         Destroy(newExplosion, 0.5f);
-
-        //Ha en gå sönder animation här också sen
-
         Invoke("death", 0.01f);
-
         Destroy(other.gameObject);
-
-        
+        Destroy(gameObject, 0.1f);
+        //TODO: add bottle crash animation
     }
-
-
-    void death()
-    {
-        Destroy(gameObject);
-    }
-    
 }

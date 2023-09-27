@@ -17,7 +17,7 @@ public class powerUp : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        soundEffects.Instance.PowerUp();
+        SoundEffects.Instance.PowerUp();
         Debug.Log("trigger!");
         powerUpPoints++;
     }

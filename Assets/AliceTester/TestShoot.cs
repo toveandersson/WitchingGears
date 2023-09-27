@@ -24,7 +24,7 @@ public class TestShoot : MonoBehaviour
             timer = 0;
 
             Instantiate(TestshootingPrefab, TestshootPoint.position, transform.rotation);
-            cameraMovement.Instance.ShakeCamera(5f, .1f);
+            CameraMovement.Instance.ShakeCamera(5f, .1f);
         }
         timer += Time.deltaTime;
 

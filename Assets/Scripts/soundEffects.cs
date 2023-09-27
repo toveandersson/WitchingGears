@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class soundEffects : MonoBehaviour
+public class SoundEffects : MonoBehaviour
 {
-    public static soundEffects Instance { get; private set; }
+    public static SoundEffects Instance { get; private set; }
     
     private AudioSource source;
 

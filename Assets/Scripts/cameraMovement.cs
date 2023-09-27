@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using Cinemachine;
 
-public class cameraMovement : MonoBehaviour
+public class CameraMovement : MonoBehaviour
 {
-    public static cameraMovement Instance { get; private set; }
+    public static CameraMovement Instance { get; private set; }
 
     private CinemachineVirtualCamera cinemachineVirtualCamera;
     public static float time = 1;

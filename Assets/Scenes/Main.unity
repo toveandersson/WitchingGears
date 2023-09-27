@@ -1734,7 +1734,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: 100
   ScoreText: {fileID: 0}
-  hBar1: {fileID: 1251668139}
+  visualHealthBar: {fileID: 0}
   eatingTimer: 0
   healthChunks:
   - {fileID: 378739769, guid: 6e5d3c60f1e7d6e439f9a96d3f7cb890, type: 3}
@@ -3380,11 +3380,6 @@ MonoBehaviour:
 Transform:
   m_CorrespondingSourceObject: {fileID: 1475005081775099890, guid: 1d344ed0391c60e42907c9422ea47fa7, type: 3}
   m_PrefabInstance: {fileID: 175518647}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1251668139 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2044424035830351205, guid: 74454bc727c24af4a8ccb695e727a420, type: 3}
-  m_PrefabInstance: {fileID: 1186441327658598562}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &1251668141 stripped
 Transform:
