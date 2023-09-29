@@ -17,6 +17,7 @@ public class Enemy : MonoBehaviour
 
     public float spawnTimer = 0;
     public float spawnTimerTimer = 20;
+    private float eatingTimer = 0;
     public int spawnDistance = 3;
     private Vector2 spawnPos;
 
@@ -36,6 +37,31 @@ public class Enemy : MonoBehaviour
         else if (spawnTimerTimer > 0) 
         {
             spawnTimer = 3;
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.GetComponent<LivesScript>() == false)
+        {
+            return;
+        }
+        
+        SoundEffects.Instance.Eating();
+    }
+
+    private void OnCollisionStay2D(Collision2D other)
+    {
+        if (other.gameObject.GetComponent<LivesScript>() == false)
+        {
+            return;
+        }
+        eatingTimer = 0;
+        eatingTimer -= Time.deltaTime;
+        if (eatingTimer < 0)
+        {
+            eatingTimer += 2;
+            SoundEffects.Instance.Eating();
         }
     }
 
